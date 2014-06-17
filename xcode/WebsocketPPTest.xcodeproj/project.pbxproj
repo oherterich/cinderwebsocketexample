@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		2D12F174E58840C584FC923B /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2570FCE128DC4BCA9E75B2BA /* sha1.h */; };
+		60F5C170204649A89588A4FB /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 057555E37D584729829171C5 /* md5.h */; };
+		0AC9CA88E253446E93B92EC1 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = B1EF81E987B64C50997A7C1C /* base64.h */; };
+		7A42A35F385A40F9A315A859 /* utilities.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8248AAD47A9F4A529DFD2F32 /* utilities.hpp */; };
+		F0788EB28A354A32A8A7383F /* utf8_validator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2732D6FA93844610AE94D3C0 /* utf8_validator.hpp */; };
+		60F719BADB744FD0B653A3FF /* uri.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C604B1EB36564F6886F42C7E /* uri.hpp */; };
+		D1358057B50244E29B4333E5 /* server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 77B5ED35D7014FBCBFDFF15C /* server.hpp */; };
+		00AA519B7B894A889F457E54 /* frame.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C34D7BEBA1F14891807A7BC1 /* frame.hpp */; };
+		105A965236F04E98B0E21097 /* error_container.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 936FE82616914154A41AD259 /* error_container.hpp */; };
+		04D32C1E4E4F44F69F1E5D3F /* error.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 15D167AC9B60440F8A95C609 /* error.hpp */; };
+		EBD41F7CB88D4311BB25B4C6 /* endpoint_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 01B9EC043C244F4AB2CFADC3 /* endpoint_base.hpp */; };
+		C3134B7706AB48C1B5E1D113 /* endpoint.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 003F6F9260CF4E1E8D954812 /* endpoint.hpp */; };
+		4735B0D7CD044727ACD16740 /* connection_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 23905A4BF8124A5C8FEAAD3B /* connection_base.hpp */; };
+		1741C9F94A854489B9F3ED40 /* connection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E26B67D8CAE64AF69103C04D /* connection.hpp */; };
+		A38131EEBE4B4E948719FD83 /* common.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8DA86E21D02340BEBCC643D0 /* common.hpp */; };
+		3E0EF7CF1F0C4CEDA9E4143B /* close.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C02B30C019DC442DA3D0DF1C /* close.hpp */; };
+		D3FCCAFE99CC4D519B0E76B8 /* client.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8A5E78030C36446692848EB8 /* client.hpp */; };
+		68864C52B5244BCD8B187DE0 /* WebSocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C49C2DC88BFE498FBBF2029C /* WebSocketServer.h */; };
+		96DFAF0A12AC4EF99FC9BC67 /* WebSocketConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C98EFDAF5CCF4EF5A1B10C1E /* WebSocketConnection.h */; };
+		0D01EA68530C446892BFFC5F /* WebSocketClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 612144D29D6A481FB0BFFE62 /* WebSocketClient.h */; };
+		E20DD61E86E549128FFB3D37 /* sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27A4FF4C7F5340E7B5FB159E /* sha1.cpp */; };
+		D085498810164186AC7DF428 /* WebSocketServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C75EA7E229B447998432033 /* WebSocketServer.cpp */; };
+		924F7C7418294EB6B23656FD /* WebSocketConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96E626AF9754AB8AA71F0B2 /* WebSocketConnection.cpp */; };
+		ED5C738CDF7643FF8C4DFE16 /* WebSocketClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC8B13A2CF7F40E69B6C56B4 /* WebSocketClient.cpp */; };
+		14C749C38FE144FE853C3A70 /* WebsocketPPTest_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = CCED6AAD20104234A218165E /* WebsocketPPTest_Prefix.pch */; };
+		C28F2C829D82486CB8157B34 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1E79A031C8A5493CA4EB2E44 /* CinderApp.icns */; };
+		E21BC698B9EB40C8AE7BEBE2 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 64456CAE3AD2465BA4B1A972 /* Resources.h */; };
+		A56EC5EBEA414F2D919FF75D /* WebsocketPPTestApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9697A712D91439D8231CFF3 /* WebsocketPPTestApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* WebsocketPPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebsocketPPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9697A712D91439D8231CFF3 /* WebsocketPPTestApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/WebsocketPPTestApp.cpp; sourceTree = "<group>"; name = WebsocketPPTestApp.cpp; };
+		64456CAE3AD2465BA4B1A972 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
+		1E79A031C8A5493CA4EB2E44 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
+		12FCD3B28A6F40049625C063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
+		CCED6AAD20104234A218165E /* WebsocketPPTest_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = WebsocketPPTest_Prefix.pch; sourceTree = "<group>"; name = WebsocketPPTest_Prefix.pch; };
+		CC8B13A2CF7F40E69B6C56B4 /* WebSocketClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/WebSocketClient.cpp; sourceTree = "<group>"; name = WebSocketClient.cpp; };
+		C96E626AF9754AB8AA71F0B2 /* WebSocketConnection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/WebSocketConnection.cpp; sourceTree = "<group>"; name = WebSocketConnection.cpp; };
+		4C75EA7E229B447998432033 /* WebSocketServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/WebSocketServer.cpp; sourceTree = "<group>"; name = WebSocketServer.cpp; };
+		27A4FF4C7F5340E7B5FB159E /* sha1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/sha1/sha1.cpp; sourceTree = "<group>"; name = sha1.cpp; };
+		612144D29D6A481FB0BFFE62 /* WebSocketClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/WebSocketClient.h; sourceTree = "<group>"; name = WebSocketClient.h; };
+		C98EFDAF5CCF4EF5A1B10C1E /* WebSocketConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/WebSocketConnection.h; sourceTree = "<group>"; name = WebSocketConnection.h; };
+		C49C2DC88BFE498FBBF2029C /* WebSocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/WebSocketServer.h; sourceTree = "<group>"; name = WebSocketServer.h; };
+		8A5E78030C36446692848EB8 /* client.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/client.hpp; sourceTree = "<group>"; name = client.hpp; };
+		C02B30C019DC442DA3D0DF1C /* close.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/close.hpp; sourceTree = "<group>"; name = close.hpp; };
+		8DA86E21D02340BEBCC643D0 /* common.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/common.hpp; sourceTree = "<group>"; name = common.hpp; };
+		E26B67D8CAE64AF69103C04D /* connection.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/connection.hpp; sourceTree = "<group>"; name = connection.hpp; };
+		23905A4BF8124A5C8FEAAD3B /* connection_base.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/connection_base.hpp; sourceTree = "<group>"; name = connection_base.hpp; };
+		003F6F9260CF4E1E8D954812 /* endpoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/endpoint.hpp; sourceTree = "<group>"; name = endpoint.hpp; };
+		01B9EC043C244F4AB2CFADC3 /* endpoint_base.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/endpoint_base.hpp; sourceTree = "<group>"; name = endpoint_base.hpp; };
+		15D167AC9B60440F8A95C609 /* error.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/error.hpp; sourceTree = "<group>"; name = error.hpp; };
+		936FE82616914154A41AD259 /* error_container.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/error_container.hpp; sourceTree = "<group>"; name = error_container.hpp; };
+		C34D7BEBA1F14891807A7BC1 /* frame.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/frame.hpp; sourceTree = "<group>"; name = frame.hpp; };
+		77B5ED35D7014FBCBFDFF15C /* server.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/server.hpp; sourceTree = "<group>"; name = server.hpp; };
+		C604B1EB36564F6886F42C7E /* uri.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/uri.hpp; sourceTree = "<group>"; name = uri.hpp; };
+		2732D6FA93844610AE94D3C0 /* utf8_validator.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/utf8_validator.hpp; sourceTree = "<group>"; name = utf8_validator.hpp; };
+		8248AAD47A9F4A529DFD2F32 /* utilities.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/utilities.hpp; sourceTree = "<group>"; name = utilities.hpp; };
+		B1EF81E987B64C50997A7C1C /* base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/base64/base64.h; sourceTree = "<group>"; name = base64.h; };
+		057555E37D584729829171C5 /* md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/md5/md5.h; sourceTree = "<group>"; name = md5.h; };
+		2570FCE128DC4BCA9E75B2BA /* sha1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src/websocketpp/sha1/sha1.h; sourceTree = "<group>"; name = sha1.h; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B9697A712D91439D8231CFF3 /* WebsocketPPTestApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* WebsocketPPTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* WebsocketPPTest */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = WebsocketPPTest;
+			sourceTree = "<group>";
+		};
+		5E27C04E25AF49FAB1CC1115 /* sha1 */ = {
+			isa = PBXGroup;
+			children = (
+				27A4FF4C7F5340E7B5FB159E /* sha1.cpp */,
+				2570FCE128DC4BCA9E75B2BA /* sha1.h */,
+			);
+			name = sha1;
+			sourceTree = "<group>";
+		};
+		381A04C97BD24E8FAC88EC09 /* base64 */ = {
+			isa = PBXGroup;
+			children = (
+				B1EF81E987B64C50997A7C1C /* base64.h */,
+			);
+			name = base64;
+			sourceTree = "<group>";
+		};
+		C0D00ECE172A4CEAAEFDE5DC /* md5 */ = {
+			isa = PBXGroup;
+			children = (
+				057555E37D584729829171C5 /* md5.h */,
+			);
+			name = md5;
+			sourceTree = "<group>";
+		};
+		D68370F4E9564C67ADCA2001 /* websocketpp */ = {
+			isa = PBXGroup;
+			children = (
+				5E27C04E25AF49FAB1CC1115 /* sha1 */,
+				8A5E78030C36446692848EB8 /* client.hpp */,
+				C02B30C019DC442DA3D0DF1C /* close.hpp */,
+				8DA86E21D02340BEBCC643D0 /* common.hpp */,
+				E26B67D8CAE64AF69103C04D /* connection.hpp */,
+				23905A4BF8124A5C8FEAAD3B /* connection_base.hpp */,
+				003F6F9260CF4E1E8D954812 /* endpoint.hpp */,
+				01B9EC043C244F4AB2CFADC3 /* endpoint_base.hpp */,
+				15D167AC9B60440F8A95C609 /* error.hpp */,
+				936FE82616914154A41AD259 /* error_container.hpp */,
+				C34D7BEBA1F14891807A7BC1 /* frame.hpp */,
+				77B5ED35D7014FBCBFDFF15C /* server.hpp */,
+				C604B1EB36564F6886F42C7E /* uri.hpp */,
+				2732D6FA93844610AE94D3C0 /* utf8_validator.hpp */,
+				8248AAD47A9F4A529DFD2F32 /* utilities.hpp */,
+				381A04C97BD24E8FAC88EC09 /* base64 */,
+				C0D00ECE172A4CEAAEFDE5DC /* md5 */,
+			);
+			name = websocketpp;
+			sourceTree = "<group>";
+		};
+		D5DFDDF6321F49CABEA7F555 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC8B13A2CF7F40E69B6C56B4 /* WebSocketClient.cpp */,
+				C96E626AF9754AB8AA71F0B2 /* WebSocketConnection.cpp */,
+				4C75EA7E229B447998432033 /* WebSocketServer.cpp */,
+				D68370F4E9564C67ADCA2001 /* websocketpp */,
+				612144D29D6A481FB0BFFE62 /* WebSocketClient.h */,
+				C98EFDAF5CCF4EF5A1B10C1E /* WebSocketConnection.h */,
+				C49C2DC88BFE498FBBF2029C /* WebSocketServer.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		857FF11FA00E4E00B23C65CD /* Cinder-WebSocketPP */ = {
+			isa = PBXGroup;
+			children = (
+				D5DFDDF6321F49CABEA7F555 /* src */,
+			);
+			name = "Cinder-WebSocketPP";
+			sourceTree = "<group>";
+		};
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				857FF11FA00E4E00B23C65CD /* Cinder-WebSocketPP */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				64456CAE3AD2465BA4B1A972 /* Resources.h */,
+				CCED6AAD20104234A218165E /* WebsocketPPTest_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E79A031C8A5493CA4EB2E44 /* CinderApp.icns */,
+				12FCD3B28A6F40049625C063 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* WebsocketPPTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WebsocketPPTest" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebsocketPPTest;
+			productInstallPath = "$(HOME)/Applications";
+			productName = WebsocketPPTest;
+			productReference = 8D1107320486CEB800E47090 /* WebsocketPPTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WebsocketPPTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* WebsocketPPTest */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* WebsocketPPTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28F2C829D82486CB8157B34 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56EC5EBEA414F2D919FF75D /* WebsocketPPTestApp.cpp in Sources */,
+				ED5C738CDF7643FF8C4DFE16 /* WebSocketClient.cpp in Sources */,
+				924F7C7418294EB6B23656FD /* WebSocketConnection.cpp in Sources */,
+				D085498810164186AC7DF428 /* WebSocketServer.cpp in Sources */,
+				E20DD61E86E549128FFB3D37 /* sha1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WebsocketPPTest_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/lib/macosx/libboost_random.a,
+					../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/lib/macosx/libboost_regex.a,
+				);
+				PRODUCT_NAME = WebsocketPPTest;
+				WRAPPER_EXTENSION = app;
+				SYMROOT = ./build;
+				LIBRARY_SEARCH_PATHS = (
+					../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/lib/macosx,
+				);
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WebsocketPPTest_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/lib/macosx/libboost_random.a,
+					../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/lib/macosx/libboost_regex.a,
+				);
+				PRODUCT_NAME = WebsocketPPTest;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+				SYMROOT = ./build;
+				LIBRARY_SEARCH_PATHS = (
+					../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/lib/macosx,
+				);
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = i386;
+				CINDER_PATH = "../../../Cinder/cinder_0.8.5_mac";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src,
+				);
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = i386;
+				CINDER_PATH = "../../../Cinder/cinder_0.8.5_mac";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					../../../Cinder/cinder_0.8.5_mac/blocks/WebSocketPP/src,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WebsocketPPTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WebsocketPPTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

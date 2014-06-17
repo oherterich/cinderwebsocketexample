@@ -1,0 +1,15 @@
+{
+  "name": "nodetest",
+  "version": "0.0.0",
+  "description": "Getting started with node at Potion",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+  		"express": "*",
+  		"ws": "*"
+  },
+  "author": "Owen Herterich",
+  "license": "ISC"
+}
